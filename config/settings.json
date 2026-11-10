@@ -1,0 +1,6 @@
+{
+  "project": "Keramat VPN",
+  "version": "0.1.0",
+  "os_target": "Debian 13",
+  "xray_installed": false
+}
