@@ -30,9 +30,14 @@ MENU
   read -r -p "Pilihan: " choice
   case "$choice" in
     1) bash "$BASE/modules/system-info.sh"; pause ;;
-    2|3|4|5|6|7|8|10)
-       echo "Modul ini belum diaktifkan. Kita bina dan uji satu demi satu."
-       pause ;;
+        2)
+       bash "$BASE/modules/xray-core.sh"
+       pause
+       ;;
+    3|4|5|6|7|8|10)
+       echo "Modul ini belum diaktifkan."
+       pause
+       ;;
     9) bash "$BASE/modules/bandwidth.sh"; pause ;;
     0) exit 0 ;;
     *) echo "Pilihan tidak sah."; sleep 1 ;;
